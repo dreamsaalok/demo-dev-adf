@@ -1,0 +1,32 @@
+{
+	"name": "sal_tbl",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlMI1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlMITable",
+		"schema": [
+			{
+				"name": "personid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "salary_date",
+				"type": "date"
+			},
+			{
+				"name": "salary",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "person_sal"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
